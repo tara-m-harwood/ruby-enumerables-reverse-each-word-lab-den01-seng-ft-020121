@@ -1,4 +1,4 @@
-def reverse_each_word(sentence)
+def each_reverse_each_word(sentence)
   reversed_sentence = ""
   word_array = sentence.split(" ")
   word_array.each do | word |
@@ -6,18 +6,21 @@ def reverse_each_word(sentence)
   end
   reversed_sentence.chomp(" ")
 end
+
+def each_reverse_each_word(sentence)
+  reversed_sentence = ""
+  word_array = sentence.split(" ")
+  word_array.each do | word |
+   reversed_sentence += word.reverse + " "
+  end
+  reversed_sentence.chomp(" ")
+end
+
+
+
 
 s = "Hello there, and how are you?"
 
 reverse_each_word(s)
 
-def reverse_each_word(sentence)
-  reversed_sentence = ""
-  word_array = sentence.split(" ")
-  word_array.each do | word |
-   reversed_sentence += word.reverse + " "
-  end
-  reversed_sentence.chomp(" ")
-end
 
-s = "Hello there, and how are you?"
