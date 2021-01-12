@@ -4,7 +4,7 @@ def reverse_each_word(sentence)
   word_array.each do | word |
    reversed_sentence += word.reverse + " "
   end
-  reversed_sentence
+  reversed_sentence.chomp(" ")
 end
 
 s = "Hello there, and how are you?"
